@@ -1,7 +1,7 @@
 # Tiny Tapeout project information
 project:
   title:        "Tiny Tapeout PFW Template"      # Project title
-  author:       “??? "      # Your name
+  author:       “Hello "      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
   description:  "A simple template "      # One line description of what your project does
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
