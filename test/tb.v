@@ -11,7 +11,6 @@ module tb ();
     //$dumpfile("tb.fst"); 
 	$dumpfile("wave.vcd");
     $dumpvars(0, tb);
-    #1;
   end
 
   // Wire up the inputs and outputs:
