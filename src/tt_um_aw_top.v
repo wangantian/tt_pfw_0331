@@ -20,6 +20,10 @@ module tt_um_aw_top (
   assign uo_out  = uo_out_reg;  
   assign uio_out = 0;
   assign uio_oe  = 0;
+  
+  wire [7:0] count_value;
+
+counter counter_inst (.clk(clk), .rst_n(rst_n),.count_value(count_value));
 
   // List all unused inputs to prevent warnings
   //wire _unused = &{ena, clk, rst_n, 1'b0};
@@ -29,7 +33,7 @@ module tt_um_aw_top (
 		uo_out_reg<=0;
 	end begin
 		if (ena) begin
-			uo_out_reg <= ui_in+uio_in;  
+			uo_out_reg <= ui_in+uio_in+count_value;  
 		end 
 	end 
   end 
